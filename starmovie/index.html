@@ -2,7 +2,7 @@
 <html lang="pt-br" dir="ltr">
 
   <head>
-    <title>Filmov - Filmes e Séries Online</title>
+    <title>Starmovie - Filmes e Séries Online</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width-device-width, initial-scale=1">
     <link rel="apple-touch-icon" sizes="180x180" href="./image/favicons/apple-touch-icon.png">
@@ -16,6 +16,35 @@
     <link rel="stylesheet" href="./css/style.css">
   </head>
 
+   <body>
+  <header>
+    <button type="topo-direito" id="botao-login">Fazer Login ▼</button>
+
+    <div id="perfil" type="topo-direito" class="perfil" style="display: none;">
+      <img type="topo-direito" id="foto-usuario" src="" alt="Foto de perfil">
+      <span id="email-usuario"></span>
+    </div>
+  </header>
+
+  <script>
+    // Se não estiver logado, volta pra tela de login
+    if (!localStorage.getItem("logado")) {
+      window.location.href = "login.html";
+    } else {
+      // Se estiver logado, pega as infos
+      const email = localStorage.getItem("emailUsuario");
+      const foto = localStorage.getItem("fotoUsuario");
+
+      // Esconde o botão "Fazer Login"
+      document.getElementById("botao-login").style.display = "none";
+
+      // Mostra o perfil com e-mail e foto
+      document.getElementById("perfil").style.display = "flex";
+      document.getElementById("email-usuario").textContent = email;
+      document.getElementById("foto-usuario").src = foto;
+    }
+  </script>
+</body>
   <body>
 
       <!-- início topo -->
@@ -24,7 +53,7 @@
         <div class="topo-esquerdo conteudo-flex">
           <!-- início do logo -->
           <div class="topo-logo">
-            <img src="./image/filmov.png" alt="Imagem logotipo da filmov" title="Imagem logotipo da filmov">
+            <img src="../starmovie/image/logostarmovie.png" alt="Imagem logotipo da filmov" title="Imagem logotipo da filmov">
           </div>
           <!-- fim do logo -->
         </div>
@@ -68,12 +97,10 @@
           <!-- área de login -->
           <div class="sublogin">
             <div>
-              <button class="subloginbtn">Fazer Login<br>ou Assinar <span class="fa fa-caret-down"></span></button>
+              <button class="subloginbtn">Fazer Login<span class="fa fa-caret-down"></span></button>
             </div>
             <div class="sublogin-conteudo">
-              <button type="button" title="Entrar">Entrar</span></button>
-              <p>ou</p>
-              <button type="button" title="Assinar">Assinar</span></button>
+              <button type="button" onclick="window.location.href='html/login.html'">Entrar</button>
             </div>
           </div>
           <!-- fim área de login -->
@@ -117,11 +144,11 @@
       <div class="dados-empresa">
 
         <div class="">
-          <h1>Você sabe o que é a Filmov?</h1>
+          <h1>Você sabe o que é a Starmovie?</h1>
         </div>
         <div class="">
           <p>
-            A Filmov é um serviço provedor online de filmes e séries com a mais ampla variedade para a sua escolha.
+            A Starmovie é um serviço provedor online de filmes e séries com a mais ampla variedade para a sua escolha.
           </p>
         </div>
         <div class="">
@@ -184,21 +211,6 @@
       </div>
       <!-- fim dados da empresa -->
 
-      <!-- início elemento -->
-      <div class="elementos conteudo-flex">
-        <div class="video">
-          <div class="embed-vid">
-            <iframe src="https://www.youtube.com/embed/3iDIdua0yy8"></iframe>
-          </div>
-        </div>
-        <div class="video">
-          <div class="embed-vid">
-            <iframe src="https://www.youtube.com/embed/csJeJ8Af53k"></iframe>
-          </div>
-        </div>
-      </div>
-      <!-- fim elemento -->
-
     </div>
     <!-- fim conteúdo principal -->
 
@@ -231,11 +243,10 @@
         </div>
       </div>
       <div>
-        <img src="./image/filmov.png" alt="Imagem logotipo da filmov" title="Imagem logotipo da filmov">
+        <img src="./image/logostarmovie.png" alt="Imagem logotipo da filmov" title="Imagem logotipo da filmov">
       </div>
       <div>
-        <p>2020 - Filmov S.A. by <a href="https://jonasmzsouza.github.io/">Jonas Souza</a></p>
-        <p>Fotografias sob licença gratuita - fonte: <a href="http://www.pexels.com" target="_blank">pexels.com</a></p>
+        <p>2025 - starmovie S.A. by <a href="https://github.com/helolrodrigues/EtecFlix.git"></a>EtecFlix</a></p>
       </div>
     </footer>
     <!-- fim rodape -->
