@@ -18,32 +18,12 @@
 
    <body>
   <header>
-    <button type="topo-direito" id="botao-login">Fazer Login ▼</button>
 
     <div id="perfil" type="topo-direito" class="perfil" style="display: none;">
       <img type="topo-direito" id="foto-usuario" src="" alt="Foto de perfil">
       <span id="email-usuario"></span>
     </div>
   </header>
-
-  <script>
-    // Se não estiver logado, volta pra tela de login
-    if (!localStorage.getItem("logado")) {
-      window.location.href = "login.html";
-    } else {
-      // Se estiver logado, pega as infos
-      const email = localStorage.getItem("emailUsuario");
-      const foto = localStorage.getItem("fotoUsuario");
-
-      // Esconde o botão "Fazer Login"
-      document.getElementById("botao-login").style.display = "none";
-
-      // Mostra o perfil com e-mail e foto
-      document.getElementById("perfil").style.display = "flex";
-      document.getElementById("email-usuario").textContent = email;
-      document.getElementById("foto-usuario").src = foto;
-    }
-  </script>
 </body>
   <body>
 
@@ -118,24 +98,28 @@
       </div>
 
       <!-- início destaque -->
+
+<div class="imagem-container">
+    <img src="./image/banner.teste.png" alt="Banner de filmes e séries">
+  </div>
       <div class="elementos conteudo-flex">
         <div class="capa">
-          <a href="./html/01-filme.html"><img src="./image/01-capa.jpg" alt="imagem modelo capa de filme" title="imagem modelo capa de filme"></a>
+          <a href="./html/01-filme.html"><img src="./image/caramelo.filme05.jpg" alt="Caramelo" title="imagem modelo capa de filme"></a>
         </div>
         <div class="capa">
-          <a href="./html/07-serie.html"><img src="./image/07-capa.jpg" alt="imagem modelo capa de série" title="imagem modelo capa de série"></a>
+          <a href="./html/02-filme.html"><img src="./image/coraline.filme01.jpg" alt="coraline" title="imagem modelo capa de série"></a>
         </div>
         <div class="capa">
-          <a href="./html/02-filme.html"><img src="./image/02-capa.jpg" alt="imagem modelo capa de filme" title="imagem modelo capa de filme"></a>
+          <a href="./html/03-filme.html"><img src="./image/divertidamente.filme06.jpeg" alt="Divertida Mente 2" title="imagem modelo capa de filme"></a>
         </div>
         <div class="capa">
-          <a href="./html/08-serie.html"><img src="./image/08-capa.jpg" alt="imagem modelo capa de série" title="imagem modelo capa de série"></a>
+          <a href="./html/04-filme.html"><img src="./image/harrypotter.filme04.jpg" alt="Harry Potter" title="imagem modelo capa de série"></a>
         </div>
         <div class="capa">
-          <a href="./html/03-filme.html"><img src="./image/03-capa.jpg" alt="imagem modelo capa de filme" title="imagem modelo capa de filme"></a>
+          <a href="./html/05-filme.html"><img src="./image/invocaçãodomal.filme02.png" alt="Invocação do Mal" title="imagem modelo capa de filme"></a>
         </div>
         <div class="capa">
-          <a href="./html/09-serie.html"><img src="./image/09-capa.jpg" alt="imagem modelo capa de série" title="imagem modelo capa de série"></a>
+          <a href="./html/06-filme.html"><img src="./image/titanic.filme03.jpg" alt="Titanic" title="imagem modelo capa de série"></a>
         </div>
       </div>
       <!-- fim destaque -->
