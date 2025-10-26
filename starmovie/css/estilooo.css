@@ -58,6 +58,24 @@ a:hover {
 }
 
 /* -------------- TOPO -------------- */
+.voltar {
+  display: block;
+  margin: 20px 0 0 20px; 
+  background-color: darkred;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover, .voltar:hover {
+  background-color: darkred;
+  transform: scale(1.05);
+  transition: all 0.2s ease;
+}
 .topo {
   background: rgba(0, 0, 0, 0.85);
   position: fixed;

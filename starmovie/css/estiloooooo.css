@@ -5,7 +5,7 @@
 }
 
 body {
-  background-image: url(../image/fundo.coraline.jpg);
+  background-image: url(../image/fundo.titanic.jpg);
   background-size: cover;
   background-attachment: fixed;
   font-family: 'PT Sans', sans-serif;
@@ -33,7 +33,9 @@ ul {
   padding: 10px;
 }
 
-a:link, a:visited, a:active {
+a:link,
+a:visited,
+a:active {
   text-decoration: none;
   color: #fff;
 }
@@ -42,7 +44,7 @@ a:hover {
   color: #B22222;
 }
 
-.conteudo-flex{
+.conteudo-flex {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -79,16 +81,17 @@ button:hover, .voltar:hover {
   position: fixed;
   z-index: 2;
   width: 100%;
-  height: 100px;;
+  height: 100px;
+  ;
   min-width: 320px;
 }
 
-.topo-esquerdo{
+.topo-esquerdo {
   width: 15%;
   height: 100px;
 }
 
-.topo-logo{
+.topo-logo {
   width: 50%;
   margin-left: 30%;
   min-width: 60px;
@@ -98,19 +101,19 @@ button:hover, .voltar:hover {
   width: 100%;
 }
 
-.topo-centro{
+.topo-centro {
   width: 70%;
   height: 100px;
   padding: 10px 0;
 }
 
-.topo-pesquisa{
+.topo-pesquisa {
   width: 45%;
   display: flex;
   justify-content: center;
 }
 
-.conteudo-pesquisa{
+.conteudo-pesquisa {
   width: 90%;
   background-color: #fff;
 }
@@ -119,7 +122,7 @@ fieldset {
   border: none;
 }
 
-.bar-pesquisa{
+.bar-pesquisa {
   width: 90%;
 }
 
@@ -142,7 +145,7 @@ fieldset {
   background-color: #fff;
 }
 
-.btn-pesquisar button{
+.btn-pesquisar button {
   color: #585858;
 }
 
@@ -175,7 +178,7 @@ button {
 }
 
 /* -------------- LOGIN -------------- */
-.topo-direito{
+.topo-direito {
   width: 15%;
   height: 100px;
 }
@@ -185,7 +188,7 @@ button {
   height: 100px;
 }
 
-.subloginbtn{
+.subloginbtn {
   width: 100%;
   height: 100px;
 }
@@ -278,11 +281,11 @@ button {
   text-align: left;
 }
 
-.dados-empresa h1{
+.dados-empresa h1 {
   margin: 2%;
 }
 
-.dados-empresa h2{
+.dados-empresa h2 {
   margin: 1%;
 }
 
@@ -300,63 +303,67 @@ button {
 }
 
 .imagem-container {
-      width: 100%;
-      margin-top: 20px;
-    }
+  width: 100%;
+  margin-top: 20px;
+}
 
-    .imagem-container img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
+.imagem-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
 /* -------------- CONTEUDO SERIES / FILMES -------------- */
 .capa {
-      display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   gap: 25px;
   padding: 50px 0;
   flex-wrap: wrap;
-    }
-    
-
-    .capa img {
-      width: 100%;
-      height: 250px; /* imagens maiores */
-      object-fit: cover;
-      border-radius: 8px;
-      transition: transform 0.3s;
-    }
-
-    .capa img:hover {
-      transform: scale(1.05);
-    }
+}
 
 
-.segundo-h1{
+.capa img {
+  width: 100%;
+  height: 250px;
+  /* imagens maiores */
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.capa img:hover {
+  transform: scale(1.05);
+}
+
+
+.segundo-h1 {
   margin-bottom: 4%;
   font-size: 1vmax;
 }
 
 .fotos {
-      display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   gap: 25px;
   padding: 50px 0;
   flex-wrap: wrap;
-    }
-    .fotos img {
-      width: 100%;
-      height: 150px; /* imagens menores */
-      object-fit: cover;
-      border-radius: 8px;
-      transition: transform 0.3s;
-    }
-    .fotos img:hover {
-      transform: scale(1.05);
-    }
+}
+
+.fotos img {
+  width: 100%;
+  height: 150px;
+  /* imagens menores */
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.fotos img:hover {
+  transform: scale(1.05);
+}
 
 /* -------------- PAGINA INDIVIDUAL / CATEGORIAS -------------- */
 .poster-play {
@@ -367,7 +374,7 @@ button {
   text-align: center;
 }
 
-.poster-play h2{
+.poster-play h2 {
   margin: 0;
   padding-bottom: 1%;
   font-size: 1vmax;
@@ -438,7 +445,7 @@ button {
   padding-bottom: 56.25%;
 }
 
-.embed-vid iframe{
+.embed-vid iframe {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -453,24 +460,24 @@ button {
 }
 
 /* -------------- CONTATO -------------- */
-.form-mapa{
+.form-mapa {
   margin: 2%;
   width: 100%;
   min-width: 310px;
 }
 
-.formulario{
+.formulario {
   width: 40%;
   margin: 5%;
 }
 
 @media (max-width: 1082px) {
-  .formulario{
+  .formulario {
     width: 310px;
   }
 }
 
-.form-contato{
+.form-contato {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -487,22 +494,22 @@ button {
   max-height: 60px;
 }
 
-.dados-user{
+.dados-user {
   width: 100%;
   display: flex;
   align-items: center;
 }
 
-.dados-user fieldset{
+.dados-user fieldset {
   width: 90%;
 }
 
 .form-contato div,
-.form-contato fieldset{
- margin-top: 1%;
+.form-contato fieldset {
+  margin-top: 1%;
 }
 
-.dados-msg fieldset{
+.dados-msg fieldset {
   width: 100%;
 }
 
@@ -554,7 +561,7 @@ button {
   text-align: center;
 }
 
-.rede-social div{
+.rede-social div {
   margin: 1%;
 }
 
@@ -570,7 +577,7 @@ button {
   padding-bottom: 75%;
 }
 
-.embed-mapa iframe{
+.embed-mapa iframe {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -587,11 +594,11 @@ footer {
   text-align: center;
 }
 
-footer div{
+footer div {
   margin-top: 20px;
 }
 
-.site-map{
+.site-map {
   padding-top: 20px;
 }
 
@@ -602,7 +609,7 @@ footer div{
   padding: 0;
 }
 
-.site-map-conteudo ul li{
+.site-map-conteudo ul li {
   padding-top: 10px;
 }
 
