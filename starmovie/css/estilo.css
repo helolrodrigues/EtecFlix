@@ -632,25 +632,8 @@ footer p {
   padding-bottom: 20px;
 }
 
-.avaliacao {
-  text-align: center;
-  margin-top: 10px;
-  color: white;
-  /* combina com o fundo escuro do site */
-}
-
-.estrelas {
-  display: inline-block;
-}
-
-.estrela {
-  font-size: 30px;
-  color: gray;
-  cursor: pointer;
-  transition: color 0.2s;
-}
-
-.estrela:hover,
-.estrela.selecionada {
-  color: gold;
+.avaliacao{
+  
+  display: flex;
+  justify-content: center;
 }
